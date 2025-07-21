@@ -10,7 +10,7 @@
 </div>
 
 ## Abstract
-Low-level enhancement and high-level visual understanding in low-light vision have traditionally been treated separately. Low-light enhancement improves image quality for downstream tasks, but existing methods rely on physical or geometric priors, limiting generalization. Evaluation mainly focuses on visual quality rather than downstream performance. Low-light visual understanding, constrained by scarce labeled data, primarily uses task-specific domain adaptation, which lacks scalability. To address these challenges, we build a generalized bridge between low-light enhancement and low-light understanding, which we term Generalized Enhancement For Understanding (GEFU). This paradigm improves both generalization and scalability. To address the diverse causes of low-light degradation, we leverage pretrained generative diffusion models to optimize images, achieving zero-shot generalization performance. Building on this, we propose Semantically Consistent Unsupervised Fine-tuning (SCUF). Specifically, to overcome text prompt limitations, we introduce an illumination-aware image prompt to explicitly guide image generation and propose a cycle-attention adapter to maximize its semantic potential. To mitigate semantic degradation in unsupervised training, we propose caption and reflectance consistency to learn high-level semantics and image-level spatial semantics. Extensive experiments demonstrate that our proposed method outperforms current state-of-the-art methods in traditional image quality and GEFU tasks including classification, detection, and semantic segmentation.
+Low-level enhancement and high-level visual understanding in low-light vision have traditionally been treated separately. Low-light enhancement improves image quality for downstream tasks but has limited generalization. Low-light visual understanding, constrained by scarce labeled data, primarily relies on task-specific domain adaptation, which lacks scalability. To address these challenges, we build a generalized bridge between low-light enhancement and low-light understanding, which we term **Generalized Enhancement For Understanding (GEFU)**. This paradigm improves both **generalization** and **scalability**. To tackle the diverse causes of low-light degradation, we propose **Semantically Consistent Unsupervised Fine-tuning (SCUF)**. Extensive experiments demonstrate that our proposed method outperforms current state-of-the-art approaches in terms of traditional image quality as well as GEFU tasks, including classification, detection, and semantic segmentation.
 
 ## Preparation
 ### 1. setup environment
@@ -60,7 +60,7 @@ accelerate launch --main_process_port 29512 src/train.py \
     --output_dir="./output/" --report_to "wandb" --tracker_project_name "scuf" --enable_xformers_memory_efficient_attention
 ```
 ### 2. test
-Download our fine-tuned [model](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe). 
+[Download]((https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe)) our fine-tuned model, we also provide our results on all task.
 ```shell
 python src/inference.py --model_path "test_model.pkl" \
     --input_file "data/unpaired_data/test_lsrw" \
@@ -71,6 +71,9 @@ python src/inference.py --model_path "test_model.pkl" \
 For IQA test, use script `python src/iqa_eval.py`.
 
 For GEFU test, please see [gefu_eval](gefu_eval/README.md).
+
+## Acnowledgement
+We would like to thank the authors of [img2img-turbo](https://github.com/GaParmar/img2img-turbo) and [ZeroShotDayNightDA](https://github.com/Red-Fairy/ZeroShotDayNightDA) for their open-source release.
 
 ## Citation
 If you find this repo useful for your research, please consider citing our paper:
