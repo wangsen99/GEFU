@@ -6,7 +6,7 @@
 <p align="center">
   <a href='https://arxiv.org/abs/2507.08380'>
     <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arXiv&logoColor=white' alt='arXiv'>
-  </a>&nbsp;&nbsp;&nbsp;
+  </a>&nbsp;
   <a href='https://huggingface.co/wangsen99/GEFU'>
     <img src='https://img.shields.io/badge/Model-HuggingFace-orange?style=flat&logo=huggingface&logoColor=FFD21E' alt='Checkpoints'>
   </a>
