@@ -60,7 +60,7 @@ accelerate launch --main_process_port 29512 src/train.py \
     --output_dir="./output/" --report_to "wandb" --tracker_project_name "scuf" --enable_xformers_memory_efficient_attention
 ```
 ### 2. test
-Download our fine-tuned model [scuf](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe), we also provide [our results](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe) on all task.
+Download our fine-tuned model [scuf](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe), we also provide [our results](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe) on all tasks.
 ```shell
 python src/inference.py --model_path "test_model.pkl" \
     --input_file "data/unpaired_data/test_lsrw" \
