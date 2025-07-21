@@ -8,7 +8,7 @@
     <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=plastic&logo=arXiv&logoColor=B31B1B' alt='arXiv'>
     </a>
     <a href='https://huggingface.co/wangsen99/GEFU'>
-    <img src='https://img.shields.io/badge/Model-HuggingFace-orange?style=plastic&logo=huggingface&logoColor=FFD21E' alt='Checkpoints'>
+    <img src='https://img.shields.io/badge/Model-HuggingFace-FFD21E?style=plastic&logo=huggingface&logoColor=FFD21E' alt='Checkpoints'>
     </a>
 </p>
 <div align=center>
