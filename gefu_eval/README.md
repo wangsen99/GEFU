@@ -36,17 +36,17 @@ gefu_eval
 ```
 
 ## Classification
-We porvide test data in [cls](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe) from [CODaN](https://github.com/Attila94/CODaN), and baseline model.
+We porvide test data in [Classification](https://huggingface.co/wangsen99/GEFU/tree/main/Classification) from [CODaN](https://github.com/Attila94/CODaN), and baseline model.
 
 Get the results by running `python eval.py --checkpoint checkpoints/model_best.pt`.
 
 ## Segmentation
-We porvide test data in [seg](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe) from [BDD100k-night](https://github.com/wangsen99/FDLNet), and baseline model.
+We porvide test data in [Segmentation](https://huggingface.co/wangsen99/GEFU/tree/main/Segmentation) from [BDD100k-night](https://github.com/wangsen99/FDLNet), and baseline model.
 
 Get the results by running `python eval.py --weight checkpoints/best_weights.pth.tar --save_path './' --save` with visual results.
 
 ## Detection
-This part is a little complicate, our test code is based on [MAET](https://github.com/cuiziteng/ICCV_MAET), we porvide test data in [det](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe), and baseline model.
+This part is a little complicate, our test code is based on [MAET](https://github.com/cuiziteng/ICCV_MAET), we porvide test data in [Detection](https://huggingface.co/wangsen99/GEFU/tree/main/Detection), and baseline model.
 
 First, you need to prepare a new enviroment:
 

@@ -2,11 +2,17 @@
   <b>From Enhancement to Understanding: Build a Generalized Bridge for Low-light Vision via Semantically Consistent Unsupervised Fine-tuning</b>
 
   <b><i> ICCV 2025</i></b>
-    [<a href="https://arxiv.org/abs/2507.08380">arXiv</a>]
 </h2>
-
+<p align="center">
+    <a href='https://arxiv.org/abs/2507.08380'>
+      <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=plastic&logo=arXiv' alt='arXiv'>
+    </a>
+    <a href='https://huggingface.co/bigai/MTU3D'>
+      <img src='https://img.shields.io/badge/Model-HuggingFace-FFD21E?style=plastic&logo=huggingface' alt='Checkpoints'>
+    </a>
+</p>
 <div align=center>
-<img src="asset/intro.jpg" width="400px">
+<img src="assets/intro.jpg" width="400px">
 </div>
 
 ## Abstract
@@ -22,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. unpaired dataset and test data
-We use unpaired images from [EnlightenGAN](https://github.com/VITA-Group/EnlightenGAN) to train our model and test on LSRW and LOLv2-real. The dataset can be found in [scuf](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe). Put it in `data/unpaired_data` and file structure should look like:
+We use unpaired images from [EnlightenGAN](https://github.com/VITA-Group/EnlightenGAN) to train our model and test on LSRW and LOLv2-real. The dataset can be found in [SCUF](https://huggingface.co/wangsen99/GEFU/tree/main/SCUF). Put it in `data/unpaired_data` and file structure should look like:
 ```shell
 GEFU
 ├── ...
@@ -60,7 +66,7 @@ accelerate launch --main_process_port 29512 src/train.py \
     --output_dir="./output/" --report_to "wandb" --tracker_project_name "scuf" --enable_xformers_memory_efficient_attention
 ```
 ### 2. test
-Download our fine-tuned model [scuf](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe), we also provide [our results](https://pan.baidu.com/s/1NlgfCm2x1iDmrFXJl-7nlw?pwd=bpbe) on all tasks.
+Download our fine-tuned model [SCUF](https://huggingface.co/wangsen99/GEFU/tree/main/SCUF), we also provide [Our Results](https://huggingface.co/wangsen99/GEFU/tree/main/Our_results) on all tasks.
 ```shell
 python src/inference.py --model_path "test_model.pkl" \
     --input_file "data/unpaired_data/test_lsrw" \
