@@ -1,20 +1,20 @@
 <h2 align="center">
-  <b>From Enhancement to Understanding: Build a Generalized Bridge for Low-light Vision via Semantically Consistent Unsupervised Fine-tuning</b>
-
-  <b><i> ICCV 2025</i></b>
+  <b>From Enhancement to Understanding: Build a Generalized Bridge for Low-light Vision via Semantically Consistent Unsupervised Fine-tuning</b><br>
+  <b><i>ICCV 2025</i></b>
 </h2>
 
 <p align="center">
-    <a href='https://arxiv.org/abs/2507.08380'>
-    <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arXiv&logoColor=B31B1B' alt='arXiv'>
-    </a>
-    <a href='https://huggingface.co/wangsen99/GEFU'>
+  <a href='https://arxiv.org/abs/2507.08380'>
+    <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arXiv&logoColor=white' alt='arXiv'>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href='https://huggingface.co/wangsen99/GEFU'>
     <img src='https://img.shields.io/badge/Model-HuggingFace-FFAE00?style=flat&logo=huggingface&logoColor=FFAE00' alt='Checkpoints'>
-    </a>
+  </a>
 </p>
 
-<div align=center>
-<img src="assets/intro.jpg" width="400px">
+<div align="center">
+  <img src="assets/intro.jpg" width="400px" />
 </div>
 
 ## Abstract
