@@ -3,14 +3,16 @@
 
   <b><i> ICCV 2025</i></b>
 </h2>
+
 <p align="center">
     <a href='https://arxiv.org/abs/2507.08380'>
-    <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=plastic&logo=arXiv&logoColor=B31B1B' alt='arXiv'>
+    <img src='https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat&logo=arXiv&logoColor=B31B1B' alt='arXiv'>
     </a>
     <a href='https://huggingface.co/wangsen99/GEFU'>
-    <img src='https://img.shields.io/badge/Model-HuggingFace-FFD21E?style=plastic&logo=huggingface&logoColor=FFD21E' alt='Checkpoints'>
+    <img src='https://img.shields.io/badge/Model-HuggingFace-FFAE00?style=flat&logo=huggingface&logoColor=FFAE00' alt='Checkpoints'>
     </a>
 </p>
+
 <div align=center>
 <img src="assets/intro.jpg" width="400px">
 </div>
