@@ -72,7 +72,7 @@ For IQA test, use script `python src/iqa_eval.py`.
 
 For GEFU test, please see [gefu_eval](gefu_eval/README.md).
 
-## Acnowledgement
+## Acknowledgement
 We would like to thank the authors of [img2img-turbo](https://github.com/GaParmar/img2img-turbo) and [ZeroShotDayNightDA](https://github.com/Red-Fairy/ZeroShotDayNightDA) for their open-source release.
 
 ## Citation
